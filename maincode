@@ -1,0 +1,21 @@
+# Palindrome word and number checker
+
+word_num = input("Enter the word or the number  : ").lower().strip()
+# checking palindrome word
+if word_num.isalpha():
+    word_p = word_num[::-1]
+    if word_num == word_p:
+        print(f"{word_num} is a palindrome word")
+    else:
+        print(f"{word_num} is not a palindrome word ")
+# checking palindrome number
+elif word_num.isdigit():
+    num_p = word_num[::-1]
+    if word_num == num_p :
+        print(f"{word_num} is a palindrome number")
+    else :
+        print(f"{word_num} is not a palindrome number ")
+else:
+    print("Please enter letters only or digits only")
+    
+    
